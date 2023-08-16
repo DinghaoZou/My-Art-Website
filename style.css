@@ -1,0 +1,55 @@
+.header {
+    background-color: #c4c4c4;
+    padding: 20px;
+    text-align: center;
+  }
+  
+.navigation {
+    overflow: hidden;
+    background-color: #270957;
+}
+  
+.navigation a {
+    float: left;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+.navigation a:hover {
+    background-color: #5a64ec;
+    color: #ffffff;
+}
+  
+.navigation a.active {
+    background-color: #aedbf8;
+    color: #000000;
+    text-decoration: none;
+}
+
+h1.main {
+    color: purple;
+    text-align: center;
+    border: 1px solid #4CAF50;
+}
+
+body {
+    margin: 0;
+}
+
+.footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: green;
+    color: white;
+    text-align: center;
+}
+
+.footer a:visited {
+    color: lightsteelblue;
+}
