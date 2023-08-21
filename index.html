@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <title>my website</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="homePageImages.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     </head>
 
@@ -22,10 +23,39 @@
 
         <a>Hi, this site, I hope I can craft it into something bigger one day.</a>
 
-        
+        <div class="rowOfImages">
+            <div class="imageBox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png" alt="Nature" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="imageBox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png" alt="Snow" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="imageBox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png" alt="Mountains" style="width:100%" onclick="myFunction(this);">
+            </div>
+            <div class="imageBox">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/SMPTE_Color_Bars.svg/1200px-SMPTE_Color_Bars.svg.png" alt="Lights" style="width:100%" onclick="myFunction(this);">
+            </div>
+        </div>
+
+        <div class="bigImage">
+            <span onclick="this.parentElement.style.display='none'" class="closeButton">&times;</span>
+            <img id="expandedImage" style="width:100%">
+            <div id="imageText"></div>
+        </div>
 
         <div class="footer">
             <a href="terms.html">Terms</a>
         </div>
+
+        <script>
+            function myFunction(images) {
+                var expandImg = document.getElementById("expandedImage");
+                var imgText = document.getElementById("imageText");
+                expandImg.src = images.src;
+                imgText.innerHTML = images.alt;
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
     </body>
 </html>
